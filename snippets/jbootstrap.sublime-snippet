@@ -1,0 +1,73 @@
+<snippet>
+	<content><![CDATA[
+<?php defined( '_JEXEC' ) or die( 'Restricted access' );?>
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>"> <!--<![endif]-->
+<head>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- CMS Head -->
+  <jdoc:include type="head" />
+  
+  <!-- CMS System CSS -->
+  <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
+  <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
+
+  <!-- Mobile viewport optimized -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- Twitter Bootstrap CSS -->
+  <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/${1:bootstrap.min.css}">
+  <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/${2:bootstrap-responsive.min.css}">
+  <!-- Author CSS -->
+  <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/${3:template.css}">
+
+</head>
+
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+  <div role="main" class="span6" id="main">
+    ${0:...}
+  </div>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>window.jQuery || document.write('<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/${4:jquery.min.js}"><\/script>')</script>
+
+  <!-- Twitter Bootstrap JS -->
+  <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/${5:bootstrap.min.js}"></script>
+
+  <!-- Scripts concatenated and minified via build script -->
+  <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/${6:plugins.js}"></script>
+  <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/${7:script.js}"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','${8:UA-XXXXX-X}'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
+]]></content>
+	<tabTrigger>jbootstrap</tabTrigger>
+  <description>Joomla! Starting Template based on Bootstrap</description>
+	<scope>text.html</scope>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<?php if ($this->countModules('${1:position}')): ?>
+	${0:...}
+<?php endif; ?>
+]]></content>
+	<tabTrigger>jifmodule</tabTrigger>
+	<description>Joomla! Single Conditional Module Position</description>
+	<scope>text.html</scope> -->
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<?php echo $app->getCfg('sitename'); ?>
+]]></content>
+	<tabTrigger>jsitename</tabTrigger>
+	<description>Joomla! Sitename</description>
+	<scope>text.html</scope>
+</snippet>

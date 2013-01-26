@@ -1,0 +1,36 @@
+<snippet>
+	<content><![CDATA[
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 3.0//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.0" type="template" client="site">
+	<name>${1:Nombre de la plantilla}</name>
+	<creationDate>${2:Fecha de creación}</creationDate>
+	<author>${3:Tu nombre}</author>
+	<authorEmail>${4:info@example.com}</authorEmail>
+	<authorUrl>${5:http://www.example.com}</authorUrl>
+	<copyright>Copyright (C) 2013 ${6:Tu empresa}</copyright>
+	<license>GPL</license>
+	<version>${7:1.0.0}</version>
+	<description>${8:Descripción de la plantilla}</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+	</files>
+	<positions>
+		<position>banner</position>
+		<position>breadcrumbs</position>
+		<position>footer</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user</position>
+	</positions>
+</extension>
+]]></content>
+	<tabTrigger>jtemplatedetails</tabTrigger>
+	<description>Joomla! Basic Template Details</description>
+	<scope>text.html</scope>
+</snippet>
