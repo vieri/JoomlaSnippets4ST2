@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<jdoc:include type="modules" name="breadcrumbs" style="none" />
+]]></content>
+	<tabTrigger>jbreadcrumbs</tabTrigger>
+	<description>Joomla! Breadcrumbs Module Position</description>
+	<scope>text.html</scope>
+</snippet>
