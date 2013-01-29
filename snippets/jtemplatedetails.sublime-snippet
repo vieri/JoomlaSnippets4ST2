@@ -32,5 +32,5 @@
 ]]></content>
 	<tabTrigger>jtemplatedetails</tabTrigger>
 	<description>Joomla! Basic Template Details</description>
-	<scope>text.html</scope>
+	<scope>text.xml</scope>
 </snippet>
